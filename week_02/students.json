@@ -1,0 +1,48 @@
+[
+    {
+        "firstName": "Philippe",
+        "studentNumber": 987654,
+        "isMarried": false,
+        "age": 18,
+        "height": 1.97,
+        "account": {
+            "userName": "tiba",
+            "email": "tiba_2000@tiktok.io"
+        },
+        "addresses": [
+            {
+                "type": "home",
+                "street": "Koekoekstraat",
+                "city": "Eeklo"
+            },
+            {
+                "type": "studenthome",
+                "street": "Sleepstraat",
+                "city": "Ghent"
+            }
+        ]
+    },
+    {
+        "firstName": "Quinten",
+        "studentNumber": 123563,
+        "isMarried": true,
+        "age": 38,
+        "height": 1.41,
+        "account": {
+            "userName": "roos",
+            "email": "quinten.roos@bereal.io"
+        },
+        "addresses": [
+            {
+                "type": "home",
+                "street": "Raesstraat",
+                "city": "Evergem"
+            },
+            {
+                "type": "studenthome",
+                "street": "Ruppelmonde",
+                "city": "Antwerp"
+            }
+        ]
+    }
+]
