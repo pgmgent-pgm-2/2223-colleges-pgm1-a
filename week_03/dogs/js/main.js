@@ -13,14 +13,21 @@ const GHENT_FOOD_URL = 'https://data.stad.gent/api/records/1.0/search/?dataset=d
     },
     fetchFoodData () {
       console.log('3. Fetch Food Data.');
-      loadJsonByPromise(GHENT_FOOD_URL).then(
+      /* loadJsonByPromise(GHENT_FOOD_URL).then(
         (data) => {
           const htmlStr = this.getHTMLForFood(data.records);
           this.$foodList.innerHTML = htmlStr;
         }
       ).catch(
         (error) => console.log(error)
-      );
+      ); */
+      fetch(GHENT_FOOD_URL)
+        .then((response) => response.json())
+        .then((data) => {
+          const htmlStr = this.getHTMLForFood(data.records);
+          this.$foodList.innerHTML = htmlStr;
+        })
+        .catch((error) => console.log(error));
     },
     getHTMLForFood (food) {
       return food.map(fd => {
