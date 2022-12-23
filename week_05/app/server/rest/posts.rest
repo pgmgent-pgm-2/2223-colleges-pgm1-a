@@ -1,2 +1,28 @@
-###
+@baseUrl = http://localhost:8080
 
+###
+GET {{baseUrl}}/api/posts HTTP/1.1
+
+###
+GET {{baseUrl}}/api/posts/63a311c6b105e8e9b14a1d05 HTTP/1.1
+
+###
+POST {{baseUrl}}/api/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Nederlands kabinet presenteert actieplan voor meer ruimte op stroomnet",
+    "synopsis": "De Nederlandse minister Jetten van Klimaat en Energie heeft het Landelijk Actieprogramma Netcongestie aangeboden aan de Tweede Kamer. Met dit plan wil het kabinet op meerdere manieren bereiken dat er meer ruimte op het stroomnet komt.",
+    "body": "<p class=\"lead\">De Nederlandse minister Jetten van Klimaat en Energie heeft het Landelijk Actieprogramma Netcongestie aangeboden aan de Tweede Kamer. Met dit plan wil het kabinet op meerdere manieren bereiken dat er meer ruimte op het stroomnet komt.</p><p>Over dit plan, dat volgens de minister is opgesteld en onderschreven 'door een brede vertegenwoordiging van stakeholders', heeft Jetten <a href=\"https://www.rijksoverheid.nl/documenten/kamerstukken/2022/12/21/kamerbrief-landelijk-actieprogramma-netcongestie\" rel=\"external noopener\" target=\"_blank\">een brief</a> naar de Kamer gestuurd waarin de essentie van het plan wordt geschetst. In grote lijnen zijn er drie hoofddoelen: sneller bouwen, het stroomnet slimmer gebruiken en de flexibele capaciteit vergroten. Voor de zomer van volgend jaar wordt bekeken of er met dit plan voldoende resultaat is geboekt of dat er nog extra stappen nodig zijn.</p><p>De hoogste prioriteit ligt bij het sneller uitbreiden van het elektriciteitsnet. Volgens de minister investeren netbeheerders jaarlijks 3,9 miljard euro in het net en dat is een verdubbeling ten opzichte van 2019. Coördinatie lijkt daarbij ook een belangrijk sleutelwoord te zijn. Volgens het ministerie kan de uitbreiding aanzienlijk versneld worden als netbeheerders, overheden en marktpartijen hun plannen beter op elkaar afstemmen en procedures parallel en sneller doorlopen. De provincies gaan hierin een belangrijke rol spelen, bijvoorbeeld via 'energieboards' waar overheden met netbeheerders en industrieclusters projecten per gebied gebundeld en integraal aanpakken. Dat moet onder meer leiden tot snellere vergunningsprocedures.</p><p>Daarnaast is er een duidelijk doel om de ruimte op het stroomnet efficiënter te gebruiken. Het ministerie wil dat de ruimte op het net flexibeler wordt ingezet en dat het net minder wordt belast op piekmomenten; dat maakt dat er meer partijen kunnen worden aangesloten. Om dat te bereiken, is het plan om 'spitsmijden' voordeliger te maken. Daarnaast moeten er flexibele contracten komen en moet het mogelijk worden om één aansluiting voor wind, zon en energieopslag te kunnen delen.</p><p>Het derde doel is de flexibele capaciteit vergroten. Het gaat er dan vooral om het energieverbruik te laten aansluiten op de (regionale) energieproductie. Daarbij kan gedacht worden aan een fabriek die harder gaat draaien op het moment dat het hard waait en dus windparken op zee veel relatief goedkope stroom genereren. Een dergelijke flexibiliteit is volgens het ministerie echter vrij nieuw en complex voor bedrijven. Daartoe gaan energieproducenten, brancheverenigingen, netbeheerders en overheden bedrijven helpen met technische ondersteuning. De komst van financiële ondersteuning wordt nog onderzocht.</p><p>Eerder <a href=\"https://tweakers.net/nieuws/201926/nederlandse-energieminister-hadden-meer-moeten-doen-om-stroomnet-uit-te-breiden.html\" title=\"Nederlandse energieminister: hadden meer moeten doen om stroomnet uit te breiden\">erkende minister Jetten</a> al dat het kabinet in de afgelopen jaren meer had moeten doen om het elektriciteitsnet uit te breiden. Hij liet toen weten te gaan ingrijpen op het stroomnet, niet alleen door meer te gaan investeren, maar ook door vaker vergunningstrajecten te gaan overnemen van lagere overheden. Bij dat laatste, vooral bij grote energie-infraprojecten, duurt de voorbereiding veelal te lang, stelde de minister. Met deze erkenning en plannen gaf hij een reactie op <a href=\"https://tweakers.net/nieuws/201858/acm-bood-onvoldoende-ruimte-voor-investeringen-in-elektriciteitsnet.html\" title=\"'ACM bood onvoldoende ruimte voor investeringen in elektriciteitsnet'\">kritiek van onder meer netbeheerders</a>. Zij uitten kritiek op de ACM, omdat de toezichthouder in hun ogen te weinig ruimte heeft geboden voor investeringen in het stroomnet, wat nu de energietransitie en de economische groei zou afremmen. Met waarschuwingen hiervoor zou weinig of niets zijn gedaan. De ACM was het daar niet mee eens en stelde dat het belangrijk is dat er geen investeringen worden gedaan die achteraf niet nodig blijken te zijn.</p>"
+}
+
+###
+PUT {{baseUrl}}/api/posts/f8d93b73-ea5c-4058-8079-97cbdea67377 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Nederlands kabinet presenteert actieplan voor meer ruimte op stroomnet"
+}
+
+###
+DELETE {{baseUrl}}/api/posts/63a311c66be00d60bde9c712 HTTP/1.1

@@ -1,0 +1,41 @@
+@baseUrl = http://localhost:8080
+
+###
+GET {{baseUrl}}/api/users HTTP/1.1
+
+###
+GET {{baseUrl}}/api/users/63a2fd30a59d0920fc74cf7f HTTP/1.1
+
+###
+POST {{baseUrl}}/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "email": "philippe.depauw@arteveldehs.be",
+    "username": "drdynscript",
+    "createdAt": 1671627902116,
+    "updatedAt": 1671627902116,
+    "id": "735500a7-a590-4234-a878-177c3cb0eada"
+}
+
+###
+PUT {{baseUrl}}/api/users/b6f3b1b8-b774-445c-a596-9f2119fccb00 HTTP/1.1
+content-type: application/json
+
+{
+    "profile": {
+        "name": "Philippe De Pauw",
+        "company": "Arteveldehogeschool",
+        "dob": "1990-09-22",
+        "address": "11 Remsen Street, Fidelis, Virginia",
+        "location": {
+            "lat": -78.146557,
+            "long": -36.221948
+        },
+        "about": "Laborum cupidatat laborum elit quis irure officia occaecat ut. Qui cillum nulla do dolor ullamco dolore ipsum in ad elit aute laborum ullamco.",
+        "picture": "https://api.multiavatar.com/philippe de pauw.svg"
+    }
+}
+
+###
+DELETE {{baseUrl}}/api/users/63a2fd30a59d0920fc74cf7f HTTP/1.1
