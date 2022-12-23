@@ -7,15 +7,13 @@ const path = require('path');
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
-const usersJson = require('../../data/users.json');
-
 /*
 Reading and writing files
 */
 const filePathUsers = path.resolve(__dirname, '..', '..', 'data', 'users.json');
 
 const readDataFromUsersFile = () => {
-  const data = fs.readFileSync(filePathUsers, { encoding: 'utf-8', flag: 'r+'});
+  const data = fs.readFileSync(filePathUsers, { encoding: 'utf-8', flag: 'r+' });
   const users = JSON.parse(data);
 
   return users;
@@ -28,7 +26,7 @@ const writeDataToUsersFile = (data) => {
 const filePathPosts = path.resolve(__dirname, '..', '..', 'data', 'posts.json');
 
 const readDataFromPostsFile = () => {
-  const data = fs.readFileSync(filePathPosts, { encoding: 'utf-8', flag: 'r+'});
+  const data = fs.readFileSync(filePathPosts, { encoding: 'utf-8', flag: 'r+' });
   const posts = JSON.parse(data);
 
   return posts;
